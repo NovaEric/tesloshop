@@ -9,6 +9,7 @@ const HomePage: NextPage = () => {
 
   const { products, isLoading } = useProducts('/products');
 
+
   return (
     <ShopLayout title='Teslo Shop - All' pageDescription='This Eric Startup' >
         <Typography variant='h1' component='h1' > Store - All </Typography>
