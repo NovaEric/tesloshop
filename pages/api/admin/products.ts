@@ -76,7 +76,6 @@ const updateProduct = async(req: NextApiRequest, res: NextApiResponse<Data>) => 
         product.images.forEach(async(image) => {
             if (!images.includes(image)) {
                 const [fileId, extension] = image.substring( image.lastIndexOf('/') + 1).split('.'); //To get f4sz9mi4fgjc012sdix4 from url above
-                console.log({image ,fileId, extension});
                 cloudinary.uploader.destroy(fileId);
             }
         })

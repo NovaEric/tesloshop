@@ -106,7 +106,6 @@ const ProductAdminPage:FC<Props> = ({ product }) => {
                 const formData = new FormData();
                 formData.append('file', file);
                 const {data} = await tesloApi.post<{ message: string }>('/admin/upload', formData);
-                console.log(data.message);
                 setValue('images', [...getValues('images'), data.message], {shouldValidate: true});
             }
 
@@ -134,8 +133,6 @@ const ProductAdminPage:FC<Props> = ({ product }) => {
                 data: form
 
             });
-
-            console.log({data});
 
             if (!form._id) {
                 router.replace(`/admin/products/${form.slug}`);

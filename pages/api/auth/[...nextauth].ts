@@ -19,7 +19,6 @@ export default NextAuth({
         password: { label: 'Password', type: 'password', placeholder: 'Password'}
       },
       async authorize (credentials) {
-        console.log({credentials});
         // return {name: '@Eric', email: 'me@me.com', role: 'admin'};
 
         return await dbUsers.checkUserEmailPass(credentials!.email, credentials!.password);
