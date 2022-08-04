@@ -17,13 +17,13 @@ const SearchPage: NextPage<Props> = ({ products, foundProducts, query }) => {
           ? (
             <Box display='flex' >
               <Typography variant='h2' sx={{ mb: 1 }} textTransform='capitalize'>  Matches found for   </Typography>
-              <Typography variant='h2' sx={{ ml: 1, color: 'seagreen', fontWeight: 600 }} textTransform='capitalize' >  "{query}"  </Typography>
+              <Typography variant='h2' sx={{ ml: 1, color: 'seagreen', fontWeight: 600 }} textTransform='capitalize' >  &quot;{ query }&quot;  </Typography>
             </Box>
           )
           : (
             <Box display='flex' >
               <Typography variant='h2' sx={{ mb: 1 }} textTransform='capitalize'>  No Matches found for   </Typography>
-              <Typography variant='h2' sx={{ ml: 1, color: 'tomato', fontWeight: 600 }} textTransform='capitalize'>  "{query}"  </Typography>
+              <Typography variant='h2' sx={{ ml: 1, color: 'tomato', fontWeight: 600 }} textTransform='capitalize'>  &quot;{ query }&quot; </Typography>
             </Box>
           )
       }
