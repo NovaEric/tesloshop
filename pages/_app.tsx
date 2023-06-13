@@ -6,6 +6,7 @@ import { CssBaseline, ThemeProvider } from '@mui/material';
 import { SWRConfig } from 'swr';
 import { lightTheme } from '../themes';
 import { AuthProvider, CartProvider, UiProvider } from '../context';
+import { DarkMode } from '@mui/icons-material';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

@@ -10,7 +10,7 @@ interface Props { products: IProduct[]; foundProducts: boolean; query: string };
 const SearchPage: NextPage<Props> = ({ products, foundProducts, query }) => {
 
   return (
-    <ShopLayout title='Teslo Shop - Search' pageDescription='This Eric Startup' >
+    <ShopLayout title='NovaMettle Shop - Search' pageDescription='This Eric Startup' >
       <Typography variant='h1' component='h1' > Search Products </Typography>
       {
         foundProducts

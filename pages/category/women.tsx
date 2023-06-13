@@ -11,8 +11,8 @@ const WomenPage = () => {
   const { products, isLoading } = useProducts('/products?gender=women');
 
   return (
-    <ShopLayout title='Teslo Shop - Women' pageDescription='This Eric Startup' >
-        <Typography variant='h1' component='h1' > Store - Women </Typography>
+    <ShopLayout title='NovaMettle Shop - Women' pageDescription='This Eric Startup' >
+        <Typography variant='h1' component='h1' > NovaMettle - Women </Typography>
         <Typography variant='h2' sx={{ mb: 1}} > Women </Typography>
         
       {

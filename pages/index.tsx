@@ -11,8 +11,8 @@ const HomePage: NextPage = () => {
 
 
   return (
-    <ShopLayout title='Teslo Shop - All' pageDescription='This Eric Startup' >
-        <Typography variant='h1' component='h1' > Store - All </Typography>
+    <ShopLayout title='NovaMettle' pageDescription='This Eric Startup' >
+        <Typography variant='h1' component='h1' > NovaMettle - All </Typography>
         <Typography variant='h2' sx={{ mb: 1}} > Unisex </Typography>
 
       {

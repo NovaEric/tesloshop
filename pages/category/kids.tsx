@@ -11,8 +11,8 @@ const KidsPage = () => {
     const { products, isLoading } = useProducts('/products?gender=kids');
 
     return (
-        <ShopLayout title='Teslo Shop - Kids' pageDescription='This Eric Startup' >
-        <Typography variant='h1' component='h1' > Store - Kids </Typography>
+        <ShopLayout title='NovaMettle Shop - Kids' pageDescription='This Eric Startup' >
+        <Typography variant='h1' component='h1' > NovaMettle - Kids </Typography>
         <Typography variant='h2' sx={{ mb: 1}} > Kids </Typography>
         
       {
