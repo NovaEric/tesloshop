@@ -12,22 +12,22 @@ export default NextAuth({
   providers: [
     // ...add more providers here
 
-    Credentials({
-      name: 'Custom Login',
-      credentials: {
-        email: { label: 'Email', type: 'email', placeholder: 'me@me.com'},
-        password: { label: 'Password', type: 'password', placeholder: 'Password'}
-      },
-      async authorize (credentials) {
-        // return {name: '@Eric', email: 'me@me.com', role: 'admin'};
+    // Credentials({
+    //   name: 'Custom Login',
+    //   credentials: {
+    //     email: { label: 'Email', type: 'email', placeholder: 'me@me.com'},
+    //     password: { label: 'Password', type: 'password', placeholder: 'Password'}
+    //   },
+    //   async authorize (credentials) {
+    //     // return {name: '@Eric', email: 'me@me.com', role: 'admin'};
 
-        return await dbUsers.checkUserEmailPass(credentials!.email, credentials!.password);
-      }
-    }),
+    //     return await dbUsers.checkUserEmailPass(credentials!.email, credentials!.password);
+    //   }
+    // }),
 
     GithubProvider({
-      clientId: process.env.GITHUB_ID,
-      clientSecret: process.env.GITHUB_SECRET,
+      clientId: process.env.GITHUB_ID || "",
+      clientSecret: process.env.GITHUB_SECRET || "",
     }),
 
   ],
@@ -75,7 +75,7 @@ export default NextAuth({
     async session({ session, token, user }) {
       // console.log({session, token, user});
 
-      session.accessToken = token.accessToken;
+      // session.accessToken = token.accessToken;
       session.user = token.user as any;
       return session;
     }
