@@ -17,4 +17,4 @@ needs db to run locally
 
 # Take a look in the link below 
 
-### https://tesloshop-pi.vercel.app/ ###
+### https://eric-tesloshop.vercel.app/ ###
